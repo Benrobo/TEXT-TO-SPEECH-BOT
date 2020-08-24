@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="refresh" content="" />
+    <link rel="stylesheet" type="text/css" href="flat/font/flaticon.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/jquery"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>javascript practice</title>
+  </head>
+
+  <body>
+    <i class="flaticon-user"></i>
+    <!-- 
+    <p id="demo"></p>
+    <form action="">
+      <input type="text" id="inputTxt" />
+    <button id="inputForm">submit</button>
+      <select name="" id="select"></select>
+    </form> -->
+    <div class="container">
+      <h1>Speech synthesiser</h1>
+
+      <p id="demo">
+        Enter some text in the input below and press return to hear it. change
+        voices using the dropdown menu.
+      </p>
+
+      <form class="form-group">
+        <input type="text" class="txt form-control" />
+        <div>
+          <label for="rate">Rate</label>
+          <input
+            type="range"
+            min="0.5"
+            max="2"
+            value="1"
+            step="0.1"
+            id="rate"
+            class="form-control slider"
+          />
+          <div class="rate-value">1</div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div>
+          <label for="pitch">Pitch</label
+          ><input
+            type="range"
+            min="0"
+            max="2"
+            value="1"
+            step="0.1"
+            id="pitch"
+            class="form-control slider"
+          />
+          <div class="pitch-value">1</div>
+          <div class="clearfix"></div>
+        </div>
+        <button class="btn btn-primary form-control btn-block" id="btn">Speak</button>
+        <br>
+        <select class="form-control"></select>
+      </form>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
